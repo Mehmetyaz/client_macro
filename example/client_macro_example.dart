@@ -1,5 +1,4 @@
-
-@API( """
+@API("""
   /foo
   /foo/:bar
   /foo/:bar/baz
@@ -12,13 +11,9 @@
 """)
 library;
 
-
 import 'package:client_macro/client_macro.dart';
-
 
 void main() {
   final client = APIClient();
   print(client.hello("turkey").route);
-
-
 }
