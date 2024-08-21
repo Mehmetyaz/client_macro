@@ -1,17 +1,18 @@
+library;
+import 'package:client_macro/client_macro.dart';
+
 @API("""
   /foo
   /foo/:bar
   /foo/:bar/baz
-  /foo/:bar/baz/:qu
+  /foo/:bar/baz/:quz
   /bar/:foo
   /baz/foo
-  /baz/foo/:bar
+  /baz/foo/:bar/:quz
   /hello
   /hello/:world
 """)
-library;
-
-import 'package:client_macro/client_macro.dart';
+class _A {}
 
 void main() {
   final client = APIClient();
